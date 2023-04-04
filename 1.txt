@@ -1,0 +1,14 @@
+roslaunch ur_modern_driver ur5_bringup.launch robot_ip:=192.168.1.50
+
+
+roslaunch ur_modern_driver ur5_bringup.launch limited:=true robot_ip:=192.168.1.50 use_lowbandwidth_trajectory_follower:=true
+
+roslaunch ur5_moveit_config moveit_planning_execution.launch limited:=true
+
+<pre>roslaunch ur5_moveit_config moveit_rviz.launch config:=true
+</pre>
+
+
+
+roslaunch ur_calibration calibration_correction.launch \
+robot_ip:=192.168.1.50 target_filename:="${HOME}/my_robot_calibration.yaml"

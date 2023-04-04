@@ -1,0 +1,8 @@
+prefix=/home/siat/catkin_UR5/devel
+
+Name: ur_modern_driver
+Description: Description of ur_modern_driver
+Version: 0.0.1
+Cflags: -I/home/siat/catkin_UR5/src/universal_robot/ur_modern_driver-master/include
+Libs: -L${prefix}/lib 
+Requires: hardware_interface controller_manager actionlib control_msgs geometry_msgs roscpp sensor_msgs trajectory_msgs ur_msgs
